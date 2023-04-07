@@ -1,0 +1,24 @@
+.Navigation {
+  background-color: #D36305;
+  color: white;
+}
+svg {
+  width: inherit;
+  height: inherit;
+}
+.list-button {
+  width: 4vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background: none;
+  border: none;
+  color: white;
+}
+.navigation-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.navigation-button:hover {
+  color: grey;
+}

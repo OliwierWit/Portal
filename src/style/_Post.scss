@@ -1,0 +1,50 @@
+.Post {
+  position: relative;
+  width: 90%;
+  min-height: 15vw;
+  height: fit-content;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  -webkit-box-shadow: 2px 2px 6px -1px rgba(66, 68, 90);
+  -moz-box-shadow: 2px 2px 6px -1px rgba(66, 68, 90);
+  box-shadow: 2px 2px 6px -1px rgba(66, 68, 90);
+}
+.Post img {
+  margin: 1vw;
+  float: right;
+  width: 5vw;
+  border-radius: 100%;
+}
+.Post button {
+  background-color: #d99090;
+  border: none;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin: 1vw;
+  border-radius: 0.5vw;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.post-title {
+  float: left;
+  font-size: 2vw;
+  margin-left: 5vw;
+  text-align: left;
+}
+.post-author {
+  float: right;
+  margin-right: 5vw;
+}
+.post-content {
+  clear: both;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align: left;
+  word-wrap: break-word;
+}
