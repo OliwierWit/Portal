@@ -11,18 +11,17 @@ function Navigation() {
         <button className="list-button">
           <List />
         </button>
-        <button className="navigation-button">Albicla 2 (Keksik Port)</button>
 
         {token == null ? (
-          <button className="navigation-button">Home</button>
+          <button className="navigation-button">Albicla 2</button>
         ) : (
           <Link to="/">
-            <button className="navigation-button">Home</button>
+            <button className="navigation-button">Albicla 2</button>
           </Link>
         )}
 
         <Link to="login">
-          <button className="navigation-button">Change account</button>
+          <button className="navigation-button">Zaloguj się</button>
         </Link>
         {token == null ? null : (
           <button
@@ -33,12 +32,12 @@ function Navigation() {
             }}
             className="navigation-button"
           >
-            Log out
+            Wyloguj się
           </button>
         )}
 
         <Link to="register">
-          <button className="navigation-button">Register</button>
+          <button className="navigation-button">Zarejestruj się</button>
         </Link>
       </nav>
 

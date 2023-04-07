@@ -28,7 +28,7 @@ function Register() {
       .post(process.env.REACT_APP_DATABASE_IP + "/users/", accountDetails)
       .then((response) => {
         console.log(response);
-        updateMessage("Rejestracja zakończona sukcesem!");
+        updateMessage("Rejestracja udana ! Witaj na Albicli 2 !");
       })
       .catch((error) => updateMessage("Coś poszło nie tak "));
   }
@@ -40,14 +40,14 @@ function Register() {
             <img src={avatarURL} alt="" />
             <input
               name="avatarURL"
-              placeholder="link do avataru"
+              placeholder="Twój avatar"
               type="text"
               value={avatarURL}
               onChange={(e) => updateAvatarURL(e.target.value)}
             ></input>
             <textarea
               name="description"
-              placeholder="Kilka słów o tobie"
+              placeholder="Twój opis"
               value={description}
               onChange={(e) => updateDescription(e.target.value)}
             ></textarea>
@@ -84,7 +84,7 @@ function Register() {
               value={password}
               onChange={(e) => updatePassword(e.target.value)}
               maxLength={20}
-            ></input>
+            ></input><p />
             <input type="submit" value="Zarejestruj się"></input>
           </div>
         </div>

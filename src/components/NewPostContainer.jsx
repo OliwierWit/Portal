@@ -44,7 +44,7 @@ function NewPostContainer() {
       <form onSubmit={addPost}>
         <input
           name="title"
-          placeholder="tytuł"
+          placeholder="Tytuł wpisu"
           type="text"
           value={title}
           onChange={(e) => updateTitle(e.target.value)}
@@ -52,7 +52,7 @@ function NewPostContainer() {
         ></input>
         <textarea
           name="text"
-          placeholder="co u ciebie?"
+          placeholder="Co masz na myśli ?"
           value={text}
           onChange={(e) => updateText(e.target.value)}
           maxLength={300}

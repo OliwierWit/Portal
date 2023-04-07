@@ -19,31 +19,31 @@ function Login() {
         localStorage.setItem("token", response.data.access_token);
         console.log(localStorage.getItem("token"));
         updateMessage(
-          "Pomyślnie zalogowano! Za chwilę nastąpi przekierowanie na stronę główną!"
+          "Logowanie udane ! Witaj na Albicli 2 !"
         );
         setTimeout(() => navigate("/"), 5000);
       })
-      .catch((error) => updateMessage("Błędne dane logowania!"));
+      .catch((error) => updateMessage("Błąd podczas logowania. Spróbuj ponownie"));
   }
   return (
     <div className="Login d-flex justify-content-center align-items-center mx-auto">
       <form onSubmit={getToken}>
-        <label>Nazwa użytkownika</label>
+        <label>Nazwa użytkownika:</label><p />
         <input
           name="username"
           type="text"
           required
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-        ></input>
-        <label>Hasło</label>
+        ></input><p />
+        <label>Hasło:</label><p />
         <input
           name="password"
           type="password"
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-        ></input>
+        ></input><p />
         <input type="submit" value="Zaloguj się"></input>
         <p>
           <b>{returnMessage}</b>

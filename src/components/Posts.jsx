@@ -61,7 +61,7 @@ function Posts() {
                 deletePost(post.id);
               }}
             >
-              usuń posta
+              Usuń 
             </button>
           ) : null}
         </div>
